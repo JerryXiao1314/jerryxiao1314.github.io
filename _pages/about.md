@@ -1,56 +1,76 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+layout: archive
+title: "基本信息"
+lang: zh
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
+  - /cv/
+  - /resume
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+{% include base_path %}
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+* **研究方向**：Embodied Visual-language Navigation；Visual-LiDAR SLAM（LIOSAM、ORBSLAM3、FASTLIVO2）；3D Reconstruction（Colmap、Gaussian Splatting）
+* **联系邮箱**：[mr.bangxiao@gmail.com](mailto:mr.bangxiao@gmail.com)
 
-A data-driven personal website
+---
+
+教育背景
 ======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+* **硕士**：武汉大学，资源与环境，工学硕士，2018.09 - 2024.06
+* **本科**：武汉大学，导航工程 / 工程管理（辅修），工学学士，2014.09 - 2018.06
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+---
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
-
-Getting started
+工作经历
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+**地平线机器人**    ｜    具身算法工程师    ｜    2024.07 - 至今
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+* **基于前馈重建模型的纯视觉语义 SLAM**
+  * 项目介绍：探索基于 DepthAnythingV3 等前馈重建模型的纯视觉导航与定位方案。
+  * 项目主页：[fsr-vln](https://horizonrobotics.github.io/robot_lab/fsr-vln/)
+  * 主导系统架构设计与实现，基于前馈重建模型的几何语义先验实现纯视觉开放词汇语义建图。
+  <!-- * 产出：形成基于前馈重建模型的纯视觉语义 SLAM 方案，相关技术成果已投稿 RSS 2026；通过算法重构将语义建图效率较原 fsr-vln 提升约 10 倍。 -->
 
-**Markdown generator**
+* **人形机器人 VLN 导航系统**
+  * 项目介绍：面向 Unitree-G1 的 VLN 系统，支持语音交互、实时避障与开放词汇语义目标导航。
+  * 项目主页：[FSR-VLN](https://horizonrobotics.github.io/robot_lab/fsr-vln/) (100+ star)
+  * 工作内容：负责多传感器外参标定、视觉-激光融合建图与定位，重点针对 Nvidia Jetson 平台优化鲁棒性、效率与内存占用；参与 VLN 系统框架设计与全模块搭建及部署测试（语音交互、建图定位、语义场景图、路径规划、动态避障等）。
+  <!-- * 产出：交付高鲁棒、低延迟的人形机器人导航框架，完成多场景长距离导航演示并获客户认可；共同一作论文已投稿 IROS 2026。 -->
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+* **VSLAM 视觉重建与导航**
+  * 项目背景：为 Real2Sim 视觉重建提供高精度相机位姿，并为足式机器人提供视觉导航定位方案。
+  * 项目主页：[GeoFlowSlam](https://github.com/HorizonRobotics/GeoFlowSlam) (100+ star)
+  * 工作内容：负责 VSLAM 方案迭代优化，通过引入足式里程计、光流、NN-feature、多目观测等约束，解决足式机器人在运动模糊、弱纹理及 IMU 高频振动下的视觉建图定位难题；参与搭建并优化 Real2Sim 重建链路，利用 Colmap 对 VSLAM 位姿离线精化，为 Gaussian Splatting 重建提供高精度几何先验。
+  <!-- * 产出：形成兼顾高精度重建与实时导航的 RGBD VSLAM 方案；以第一作者完成相关论文 GeoFlowSLAM，已被 IROS 2025 接收。 -->
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+* **AGV 物流机器人激光导航定位**
+  * 项目背景：POC 商业项目，面向工厂货架场景的 AGV 自动搬运与摆放。
+  * 工作内容：负责多激光雷达外参标定及激光 SLAM 建图与定位方案的设计与搭建，建立从离线标定、建图到实时在线定位的完整工程链路；参与前期方案调研与传感器选型、布局及安装。
+  <!-- * 产出：通过客户演示验收并推动后续商业合作；作为第一发明人获 1 项 AGV 导航定位相关专利授权。 -->
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+**地平线机器人**  ｜  建图定位算法工程师（实习）  ｜  2024.03 - 2024.07
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+* **行车 / 泊车定位**
+  * 行车方面：开发路侧入侵检测，识别因施工导致的路沿入侵高精地图车道等场景，支撑定位系统降级策略以规避碰撞风险。
+  * 泊车方面：负责 Visual Place Recognition（VPR）方案工程评估，在自采室内外车载数据集上对比 SALAD、EigenPlaces 等算法的鲁棒性，为应对车库入口相邻或 GNSS 漂移导致的地图播发错误与定位失败提供决策依据。
+<!-- * 产出：路侧入侵检测有效检出率 70%，显著保障行车安全；完成多组 VPR 算法在公开与自采数据集上的评测，为泊车定位播图策略提供决策依据。 -->
+
+**Momenta**   ｜  建图定位算法工程师（实习）  ｜  2023.06 - 2023.10
+
+* **高速行车定位**
+  * 针对高速场景下重定位不稳定问题，在地图匹配模块中引入纵线、杆状物等语义特征约束，并使用 MSCKF 滤波对重定位结果进行融合，输出车辆融合定位结果。
+<!-- * 产出：重定位模块有效输出率由 34.6% 提升至 70.7%；融合定位纵向精度由 0.72 m 优化至 0.25 m。 -->
+
+---
+
+学术成果（工作期间）
+======
+* **FSR-VLN: Fast and Slow Reasoning for Vision-Language Navigation with Hierarchical Multi-modal Scene Graph**，[FSR-VLN](https://horizonrobotics.github.io/robot_lab/fsr-vln/) (100+ star)，IROS 2026 在投，共同一作
+* **GeoFlow-SLAM: A Robust Tightly-Coupled RGBD-Inertial and Legged Odometry Fusion SLAM for Dynamic Legged Robotics**，[GeoFlowSlam](https://github.com/HorizonRobotics/GeoFlowSlam) (100+ star)，IROS 2025，第一作者
+* **IRIS-SLAM: Unified Geo-Instance Representations for Robust Semantic Localization and Mapping**
+* AGV 建图定位发明专利授权 1 项
