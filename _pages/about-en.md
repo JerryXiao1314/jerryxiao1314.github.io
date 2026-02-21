@@ -28,22 +28,21 @@ Work experience
 **Horizon Robotics**  ｜  Embodied Algorithm Engineer  ｜  July 2024 – Present
 
 * **Pure visual semantic SLAM based on feedforward reconstruction models**
-  * Introduction: Exploring pure visual navigation and localization based on feedforward reconstruction models such as DepthAnythingV3.
-  * Project: [fsr-vln](https://horizonrobotics.github.io/robot_lab/fsr-vln/)
-  * Led system architecture design and implementation; achieved open-vocabulary semantic mapping from geometric-semantic priors of feedforward reconstruction models.
+  * Introduction: Pure visual navigation and localization based on feedforward reconstruction models such as DepthAnythingV3.
+  * Responsible for system architecture design and implementation. Using geometric-semantic priors from feedforward reconstruction models to achieve robust, high-precision, real-time open-vocabulary semantic mapping.
 
 * **Humanoid robot VLN navigation system**
   * Introduction: VLN system for Unitree-G1 with voice interaction, real-time obstacle avoidance, and open-vocabulary semantic goal navigation.
-  * Project: [FSR-VLN](https://horizonrobotics.github.io/robot_lab/fsr-vln/) (100+ star)
+  * Project: [https://horizonrobotics.github.io/robot_lab/fsr-vln/](https://horizonrobotics.github.io/robot_lab/fsr-vln/) (100+ star)
   * Responsible for multi-sensor extrinsic calibration and visual-LiDAR fusion mapping and localization, with focus on Nvidia Jetson for robustness, efficiency, and memory; participated in VLN framework design, full pipeline implementation, and deployment (voice, mapping & localization, semantic scene graph, path planning, dynamic obstacle avoidance).
 
 * **VSLAM visual reconstruction and navigation**
-  * Context: High-precision camera poses for Real2Sim visual reconstruction, and visual navigation and localization for legged robots.
-  * Project: [GeoFlowSlam](https://github.com/HorizonRobotics/GeoFlowSlam) (100+ star)
+  * Introduction: High-precision camera poses for Real2Sim visual reconstruction, and visual navigation and localization for legged robots.
+  * Project: [https://github.com/HorizonRobotics/GeoFlowSlam](https://github.com/HorizonRobotics/GeoFlowSlam) (100+ star)
   * Responsible for VSLAM iteration and optimization; addressed visual mapping and localization under motion blur, weak texture, and IMU vibration via leg odometry, optical flow, NN-features, and multi-view constraints; participated in building and optimizing the Real2Sim reconstruction pipeline, using Colmap for offline VSLAM pose refinement to provide high-precision geometric priors for Gaussian Splatting reconstruction.
 
-* **AGV logistics robot laser navigation and localization**
-  * Context: POC project for AGV automated handling in factory shelf environments.
+* **AGV logistics robot lidar navigation and localization**
+  * Introduction: POC commercialization project for AGV automated handling in factory shelf environments.
   * Responsible for multi-LiDAR extrinsic calibration and laser SLAM mapping and localization design and implementation; established full pipeline from offline calibration and mapping to real-time localization; participated in early solution study and sensor selection, layout, and installation.
 
 **Horizon Robotics**  ｜  Mapping & localization algorithm engineer (intern)  ｜  Mar 2024 – July 2024
@@ -61,7 +60,7 @@ Work experience
 
 Publications (during work)
 ======
-* **FSR-VLN: Fast and Slow Reasoning for Vision-Language Navigation with Hierarchical Multi-modal Scene Graph**, [FSR-VLN](https://horizonrobotics.github.io/robot_lab/fsr-vln/) (100+ star), IROS 2026 under review, co-first author
-* **GeoFlow-SLAM: A Robust Tightly-Coupled RGBD-Inertial and Legged Odometry Fusion SLAM for Dynamic Legged Robotics**, [GeoFlowSlam](https://github.com/HorizonRobotics/GeoFlowSlam) (100+ star), IROS 2025, first author
-* **IRIS-SLAM: Unified Geo-Instance Representations for Robust Semantic Localization and Mapping**
+* **FSR-VLN:** Fast and Slow Reasoning for Vision-Language Navigation with Hierarchical Multi-modal Scene Graph, [https://horizonrobotics.github.io/robot_lab/fsr-vln/](https://horizonrobotics.github.io/robot_lab/fsr-vln/), IROS 2026 under review, co-first author
+* **GeoFlow-SLAM:** A Robust Tightly-Coupled RGBD-Inertial and Legged Odometry Fusion SLAM for Dynamic Legged Robotics, [https://github.com/HorizonRobotics/GeoFlowSlam](https://github.com/HorizonRobotics/GeoFlowSlam), IROS 2025, first author
+* **IRIS-SLAM:** Unified Geo-Instance Representations for Robust Semantic Localization and Mapping
 * 1 granted invention patent (AGV mapping and localization)
